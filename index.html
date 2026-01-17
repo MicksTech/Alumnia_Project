@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Alumnia Home Page</title>
+</head>
+
+<body class="w-full min-h-screen bg-white dark:bg-gray-800">
+    <!--Header start-->
+    <header class="bg-yellow-100 flex w-full h-24 justify-center items-center gap-4 p-4 dark:bg-gray-900 relative">
+        <!-- Logo -->
+        <a href="#home" class="text-lg text-slate-500 font-bold dark:text-white">BIHS</a>
+
+        <!-- Navigation -->
+        <nav>
+            <ul class="list-none flex gap-4 items-center" id="menuNav">
+                <i class="fa-solid fa-xmark text-white text-xl cursor-pointer" onclick="closeBar(this)"></i>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#service" class="nav-link">Service</a></li>
+                <li><a href="#history" class="nav-link">History</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="flex gap-4 items-center">
+            <a href="./public/login.html"
+                class="text-white rounded-md p-2 bg-slate-500 transition-transform duration-500 hover:bg-slate-600 hover:scale-110">Login</a>
+            <a href="./Sign-user/sign.html"
+                class="text-white rounded-md p-2 bg-slate-500 transition-transform duration-500 hover:bg-slate-600 hover:scale-110">Sign-up</a>
+        </div>
+
+        <!-- Hamburger for mobile -->
+        <div class="hamburger md:hidden">
+            <i class="fa-solid fa-bars text-2xl cursor-pointer" onclick="menuBar(this)"></i>
+        </div>
+    </header>
+    <!--Header end-->
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

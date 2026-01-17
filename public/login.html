@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta content="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnia Website</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="w-full bg-slate-500 h-full flex items-center justify-center">
+    <div class="w-full md:w-1/2 h-full md:h-3/4 md:grid md:grid-cols-3 sm:justify-center sm:items-center flex justify-center items-center shadow-lg">
+        <div class="hidden md:flex justify-center items-center rounded-l-lg overflow-hidden w-full h-full">
+            <img src="/src/img/image-banoyo.jpg" alt="Login Banner"
+                class="w-full h-full object-cover cursor-pointer transition-transform duration-500 ease-in-out hover:scale-110">
+        </div>
+        <form onsubmit="login(event)"
+            class="w-full max-w-4xl h-full rounded-tr-lg rounded-br-lg flex flex-col items-center justify-center gap-4 bg-yellow-100">
+            <span>
+                <a href="/index.html"><i class="fa-solid fa-xmark text-slate-500"></i></a>
+            </span>
+            <h2 class="uppercase font-bold text-2xl text-slate-500">Welcome Back!</h2>
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-solid fa-user text-slate-500"></i>
+                <input class="border border-slate-500 p-2 rounded-md" type="text" name="user" id="user"
+                    placeholder="Enter your Username" required>
+            </div>
+
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-solid fa-lock text-slate-500"></i>
+                <div>
+                    <input type="password" name="password" id="password"
+                        class="border border-slate-500 p-2 pr-10 rounded-md" placeholder="Enter your Password" required>
+                </div>
+            </div>
+
+            <div class="flex justify-around items-center gap-6">
+                <a href="" class="text-slate-500 font-semibold">Forgot password</a>
+                <a href="" class="text-slate-500 font-semibold">Sign-up</a>
+            </div>
+
+            <div class="mt-6 flex items-center gap-6 flex-col w-full md:max-w-4xl">
+                <button class="bg-slate-600 px-8 py-2 w-1/2 font-semibold  rounded-md text-white uppercase 
+                    hover:bg-slate-500 cursor-pointer">Login
+                </button>
+            </div>
+
+            <div class="flex justify-center items-center w-5">
+
+                <a href="" target="_blank"><img src="/icon/logo_15465616.png" alt="" class="w-5 h-5"></a>
+            </div>
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
