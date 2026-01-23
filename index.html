@@ -12,7 +12,7 @@
 
 <body class="w-full min-h-screen scroll-smooth">
     <!--Header start-->
-    <header class="bg-yellow-100 sticky top-0 z-50 w-full">
+    <header class="bg-slate-400 sticky top-0 z-50 w-full">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-center gap-4 h-24 md:h-20">
     
@@ -90,18 +90,37 @@
     </header>   
     <!--Header end-->
 
-    <!---Main start-->
+    <!---Main Content-->
     <main>
-        <section class="w-full min-h-screen flex items-center justify-center gap-4" id="home">
-            <div class="relative bg-slate-600 w-full min-h-screen flex items-center justify-center">
-                <p>Relative</p>
-
-                <div class="absolute top-52 p-3 left-52 z-10 bg-white">
-                    <p>Absolute</p>
+        <!--Home page start-->
+        <section class="w-full min-h-screen flex items-center justify-center gap-4 mx-auto" id="home">
+            <div class="w-full min-h-screen flex items-center justify-center bg-center bg-cover bg-no-repeat" style="background-image: url(./asset/img/image-banoyo.jpg);">
+                <div class="text-center gap-4 flex flex-col items-center animate-spin w-1/2">
+                    <h3 class="text-white text-3xl font-bold font-sans text-wrap">BANOYO INTEGRATED NATIONAL HIGH SCHOOL</h3>
+                    <i class="fa-brands fa-facebook text-2xl text-slate-500 cursor-pointer"></i>
                 </div>
             </div>
         </section>
-    </main>
+        <!--Home page end-->
+
+        <!--About page start-->
+        <section class="w-full min-h-screen bg-slate-400 flex md:flex-col">
+            <div class="w-full flex flex-col items-center justify-center" id="about">
+                <h2 class="font-bold uppercase text-3xl text-slate-500 mt-6 font-sans">About</h2>
+                <div class="max-w-full flex mt-6 justify-center items-center gap-6">
+                    <p class="w-1/2 p-4 text-justify text-wrap font-sans">Banoyo Integrated National High School is a public educational institution committed to providing quality and inclusive
+                    education for learners in the community. The school aims to develop knowledgeable, disciplined, and responsible students
+                    by promoting academic excellence, values formation, and holistic growth. Through dedicated teachers and supportive
+                    programs, the school continues to nurture future-ready individuals.</p>
+
+                    <img src="/asset/img/image-banoyo.jpg" class="w-1/6 md:w-1/6 h-60 md:h-3/4 rounded object-cover transition-transform duration-500 ease-in-out hover:scale-110" alt="">
+                </div>
+            </div>
+        </section>
+        <!--About page end-->
+
+        <!--Service page start-->
+    </main> 
 
     <script src="asset/js/main.js"></script>
 </body>
