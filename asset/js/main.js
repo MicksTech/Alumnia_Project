@@ -36,3 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+currentDate = new Date();
+year = currentDate.getFullYear();
+document.getElementById("currentDate").innerHTML = "©copy rights " + year;
