@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="./asset/output.css">
+    <link rel="shortcut icon" href="/asset/img/images-removebg-preview.png" type="image/x-icon">
     <title>Alumnia Home Page</title>
 </head>
 
-<body class="w-full min-h-screen scroll-smooth">
+<body class="w-full min-h-screen">
     <!--Header start-->
     <header class="bg-yellow-100 sticky top-0 z-50 w-full">
         <div class="container mx-auto px-4">
@@ -44,13 +45,13 @@
 
                 <!-- Desktop Action Buttons (hidden on mobile) -->
                 <div class="hidden md:flex items-center gap-4 ml-auto">
-                    <a href="./asset/login.html"
+                    <a href="./asset/login.php"
                         class="px-4 py-2 bg-slate-600 text-white hover:bg-slate-700 transition-colors font-medium">
                         Login
                     </a>
-                    <a href="./Sign-user/sign.html"
+                    <a href="./Sign-user/register.html"
                         class="px-4 py-2 bg-slate-600 text-white hover:bg-slate-700 transition-colors font-medium">
-                        Sign-up
+                        Register
                     </a>
                 </div>
 
@@ -80,9 +81,9 @@
                             class="text-center px-4 py-2 bg-slate-600 text-white rounded hover:bg-slate-700 transition-colors">
                             Login
                         </a>
-                        <a href="./Sign-user/sign.html" target="_blank"
+                        <a href="./Sign-user/register.html" target="_blank"
                             class="text-center px-4 py-2 bg-slate-600 text-white rounded hover:bg-slate-700 transition-colors">
-                            Sign-up
+                            Register
                         </a>
                     </div>
                 </div>
@@ -100,7 +101,7 @@
                 <div class="text-center gap-4 flex flex-col items-center animate-spin w-16">
                     <h3 class="text-white text-3xl font-bold text-wrap" style="font-family:BBH Sans Hegarty;">BANOYO
                         INTEGRATED NATIONAL HIGH SCHOOL</h3>
-                        <p class="text-white text-2xl font-sans uppercase">Alumni Website</p>
+                    <p class="text-white text-2xl font-sans uppercase">Alumni Website</p>
                     <a href="" class="w-1/2 h-1/2 items-center justify-center flex gap-2">
                         <i class="fa-brands fa-facebook text-2xl text-white"></i>
                         <i class="fa-brands fa-twitter text-2xl text-white"></i>
@@ -127,7 +128,7 @@
                         programs, the school continues to nurture future-ready individuals.</p>
 
                     <img src="/asset/img/images-removebg-preview.png"
-                        class="w-1/6 md:w-1/6 h-full md:h-3/4 rounded object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+                        class="w-1/6 md:hidden rounded object-cover transition-transform duration-500 ease-in-out hover:scale-110"
                         alt="">
                 </div>
             </div>
@@ -135,58 +136,60 @@
         <!--About page end-->
 
         <!--Service page start-->
-<section>
-    <div class="w-full min-h-screen flex flex-col bg-cover bg-center bg-no-repeat"
-        style="background-image: url(/asset/img/image-banoyo.jpg);">
+        <section>
+            <div class="w-full min-h-screen flex flex-col bg-cover bg-center bg-no-repeat"
+                style="background-image: url(/asset/img/image-banoyo.jpg);">
 
-        <h2 class="font-bold uppercase text-3xl text-white mt-6 font-sans text-center" id="service">
-            Service
-        </h2>
+                <h2 class="font-bold uppercase text-3xl text-white mt-6 font-sans text-center" id="service">
+                    Service
+                </h2>
 
-        <!-- GRID -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-6 p-4 place-items-center">
+                <!-- GRID -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-6 p-4 place-items-center">
 
-            <!-- High School -->
-            <div
-                class="bg-yellow-100 w-full max-w-md h-full transition-transform duration-500 ease-in-out hover:scale-105 cursor-pointer flex flex-col items-center justify-center rounded">
+                    <!-- High School -->
+                    <div
+                        class="bg-yellow-100 w-full max-w-md h-full transition-transform duration-500 ease-in-out hover:scale-105 cursor-pointer flex flex-col items-center justify-center rounded">
 
-                <h3 class="text-slate-500 font-bold text-center mt-4 text-md" style="font-family: BHH Sans Hegarty;">
-                    High School Education
-                </h3>
+                        <h3 class="text-slate-500 font-bold text-center mt-4 text-md"
+                            style="font-family: BHH Sans Hegarty;">
+                            High School Education
+                        </h3>
 
-                <p class="text-justify font-sans text-slate-500 p-4 text-sm">
-                    I completed my Junior High School education where I developed strong foundational skills in
-                    Mathematics, Science, English, and Technology.
-                </p>
+                        <p class="text-justify font-sans text-slate-500 p-4 text-sm">
+                            I completed my Junior High School education where I developed strong foundational skills in
+                            Mathematics, Science, English, and Technology.
+                        </p>
 
-                <img src="./asset/img/images-removebg-preview.png" class="w-40 object-cover mt-4 px-4" alt="">
+                        <img src="./asset/img/images-removebg-preview.png" class="w-40 object-cover mt-4 px-4" alt="">
+                    </div>
+
+                    <!-- Senior High -->
+                    <div
+                        class="bg-yellow-100 w-full max-w-md h-full transition-transform duration-500 ease-in-out hover:scale-105 cursor-pointer flex flex-col items-center justify-center rounded">
+
+                        <h3 class="text-slate-500 font-bold text-center mt-4 text-md"
+                            style="font-family: BHH Sans Hegarty;">
+                            Senior High School Education
+                        </h3>
+
+                        <p class="text-justify font-sans text-slate-500 p-4 text-sm">
+                            I completed my Senior High School education under the ICT strand, where I gained knowledge
+                            in basic programming and web development.
+                        </p>
+
+                        <img src="./asset/img/images-removebg-preview.png" class="w-40 object-cover mt-4 px-4" alt="">
+                    </div>
+
+                </div>
             </div>
-
-            <!-- Senior High -->
-            <div
-                class="bg-yellow-100 w-full max-w-md h-full transition-transform duration-500 ease-in-out hover:scale-105 cursor-pointer flex flex-col items-center justify-center rounded">
-
-                <h3 class="text-slate-500 font-bold text-center mt-4 text-md" style="font-family: BHH Sans Hegarty;">
-                    Senior High School Education
-                </h3>
-
-                <p class="text-justify font-sans text-slate-500 p-4 text-sm">
-                    I completed my Senior High School education under the ICT strand, where I gained knowledge
-                    in basic programming and web development.
-                </p>
-
-                <img src="./asset/img/images-removebg-preview.png" class="w-40 object-cover mt-4 px-4" alt="">
-            </div>
-
-        </div>
-    </div>
-</section>
+        </section>
 
         <!--Service page end-->
 
         <!--History page start-->
         <section class="w-full min-h-screen bg-yellow-100 flex">
-            <div class="w-full flex flex-col items-center justify-center " id="about">
+            <div class="w-full flex flex-col items-center justify-center " id="history">
                 <h2 class="font-bold uppercase text-3xl text-slate-500 mt-6 font-sans">History</h2>
                 <div class="w-full flex mt-6 justify-center items-center gap-6 flex-wrap">
                     <p class="w-1/2 p-4 text-justify text-wrap font-sans text-slate-500 md:hidden">Banoyo Integrated
@@ -199,7 +202,7 @@
                         by House Bill No. 3044, which included funding for its operation.</p>
 
                     <img src="/asset/img/images-removebg-preview.png"
-                        class="w-1/6 md:w-1/6 h-full md:h-3/4 rounded object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+                        class="w-1/6 md:hidden rounded object-cover transition-transform duration-500 ease-in-out hover:scale-110"
                         alt="">
                 </div>
             </div>
@@ -208,12 +211,11 @@
 
         <!--Contact page start-->
         <section>
-            <footer class="footer-distributed bg-slate-500">
+            <footer class="footer-distributed bg-slate-500" id="contact">
 
                 <div class="footer-left">
 
-                    <img src="./asset/img/images-removebg-preview.png" alt=""
-                    class="w-1/6 h-1/6">
+                    <img src="./asset/img/images-removebg-preview.png" alt="" class="w-1/6 h-1/6">
 
                     <p class="footer-links">
                         <a href="#" class="link-1">Home</a>
@@ -254,7 +256,7 @@
                     <p class="footer-company-about">
                         <span>About</span>Banoyo National High
                         School is a public educational institution committed to providing quality and inclusive
-                        education for learners in the community. 
+                        education for learners in the community.
                     </p>
 
                     <div class="footer-icons">
@@ -266,7 +268,8 @@
                     </div>
 
                     <div class="mt-4">
-                        <a href="#home" class="bg-slate-600 text-white p-2 rounded-full hover:bg-slate-700 transition-colors">
+                        <a href="#home"
+                            class="bg-slate-600 text-white p-2 rounded-full hover:bg-slate-700 transition-colors">
                             <i class="fa-solid fa-arrow-up"></i>
                         </a>
                     </div>
